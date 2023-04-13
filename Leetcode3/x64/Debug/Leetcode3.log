@@ -1,3 +1,4 @@
 ﻿  main.cpp
-D:\fanfaner_program\leetcode_practice\Leetcode3\Leetcode3\solution.cpp(38,1): warning C4267: '=': 將 'size_t' 轉換為 'int'，資料可能遺失
+  solution.cpp
+  正在產生程式碼...
   Leetcode3.vcxproj -> D:\fanfaner_program\leetcode_practice\Leetcode3\x64\Debug\Leetcode3.exe

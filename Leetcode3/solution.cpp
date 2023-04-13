@@ -9,35 +9,24 @@ public:
 
 	int lengthOfLongestSubstring(string s) {
 		map<char, int> charTable;
-		int isChange = 0;
-		int max = 0, stay = 0;
+		//int isChange = 0, stay = 0;
+		int total = 0, max = 0;
 
 		for (int i = 0; i < s.length(); i++) {
 			//char在charTable
 			if (charTable.count(s[i]) != 0) {
-				//重複char更新位置與比較sub string的大小
-				if (max < i - stay) {
-					max = i - stay;
-					isChange++;
-				}
-				if (charTable[s[i]] < stay) {//處理abbca
-					charTable[s[i]] = stay - 1;
-				}
-				stay = i;
-				if (max < i - charTable[s[i]]) {
-					max = i - charTable[s[i]];
-					isChange++;
-				}
+				if (total > max)max = total;
+
+				//從重複的舊地方+1重新檢查
+				i = charTable[s[i]] + 1;//abbca會變loop
+				charTable.clear();
+				total = 0;
 			}
 			//char目前的位置
 			charTable[s[i]] = i;
+			total++;
 		}
-
-		if (stay != s.length()) {
-			if (max < s.length() - stay) {
-				max = s.length() - stay;
-			}
-		}
+		if (total > max)max = total;
 		return  max;
 	}
 };
