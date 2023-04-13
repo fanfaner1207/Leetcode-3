@@ -1,5 +1,3 @@
 ﻿  main.cpp
-D:\fanfaner_program\leetcode_practice\Leetcode3\Leetcode3\main.cpp(25,1): warning C4267: '=': 將 'size_t' 轉換為 'int'，資料可能遺失
-D:\fanfaner_program\leetcode_practice\Leetcode3\Leetcode3\main.cpp(28,1): warning C4267: 'return': 將 'size_t' 轉換為 'int'，資料可能遺失
-  LINK : 最後的累加連結找不到或未建置 D:\fanfaner_program\leetcode_practice\Leetcode3\x64\Debug\Leetcode3.exe，正在執行完整連結
+D:\fanfaner_program\leetcode_practice\Leetcode3\Leetcode3\solution.cpp(38,1): warning C4267: '=': 將 'size_t' 轉換為 'int'，資料可能遺失
   Leetcode3.vcxproj -> D:\fanfaner_program\leetcode_practice\Leetcode3\x64\Debug\Leetcode3.exe
